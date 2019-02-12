@@ -18,4 +18,4 @@ before_install:
 
 
 script:
-  - docker exec tutorials_tank_node:1.0.0 node -v
+  - docker exec zawiszaty/tutorials_tank_node:1.0.0 node -v
