@@ -15,7 +15,7 @@ before_install:
   - docker version
 
   - docker build --no-cache -t zawiszaty/tutorials_tank_node:1.0.0 -f 1.0.0/Dockerfile 1.0.0/
-  - docker run --name zawiszaty/tutorials_tank_node:1.0.0 -d -v $PWD:/app zawiszaty/tutorials_tank_node:1.0.0
+  - docker run --name tutorials_tank_node -d -v $PWD:/app zawiszaty/tutorials_tank_node:1.0.0
 
 script:
-  - docker exec zawiszaty/tutorials_tank_node:1.0.0 node -v
+  - docker exec tutorials_tank_node node -v
